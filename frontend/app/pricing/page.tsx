@@ -75,7 +75,7 @@ export default async function PricingPage() {
               <div
                 key={plan._id}
                 className={cn(
-                  "relative rounded-2xl border p-8 flex flex-col",
+                  "relative rounded-2xl border p-8 flex flex-col transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl",
                   plan.highlighted
                     ? "border-[hsl(var(--accent))] bg-primary text-primary-foreground shadow-2xl scale-105 z-10"
                     : "border-border bg-card"
