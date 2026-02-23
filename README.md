@@ -16,7 +16,7 @@ folio-platform/
 ```bash
 cd backend
 npm install
-cp .env.example .env   # fill in your MONGODB_URI
+.env   # fill in your MONGODB_URI
 npm run dev
 ```
 
@@ -24,6 +24,6 @@ npm run dev
 ```bash
 cd frontend
 npm install
-cp .env.example .env.local   # fill in NEXT_PUBLIC_API_URL
+.env.local   # fill in NEXT_PUBLIC_API_URL
 npm run dev
 ```
