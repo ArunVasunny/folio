@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Design tokens — light mode */
+    --background: 30 20% 98%;
+    --foreground: 20 10% 8%;
+    --card: 30 15% 96%;
+    --card-foreground: 20 10% 8%;
+    --primary: 20 10% 8%;
+    --primary-foreground: 30 20% 98%;
+    --secondary: 30 10% 92%;
+    --secondary-foreground: 20 10% 20%;
+    --muted: 30 8% 90%;
+    --muted-foreground: 20 5% 45%;
+    --accent: 35 60% 55%;
+    --accent-foreground: 20 10% 8%;
+    --border: 30 8% 86%;
+    --input: 30 8% 86%;
+    --ring: 35 60% 55%;
+    --radius: 0.5rem;
+
+    /* Fonts */
+    --font-display: 'Cormorant Garamond';
+    --font-body: 'DM Sans';
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body), sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display), serif;
+  }
+}
+
+@layer utilities {
+  .animate-delay-100 { animation-delay: 100ms; }
+  .animate-delay-200 { animation-delay: 200ms; }
+  .animate-delay-300 { animation-delay: 300ms; }
+  .animate-delay-400 { animation-delay: 400ms; }
+  .animate-delay-500 { animation-delay: 500ms; }
+
+  .text-balance { text-wrap: balance; }
+}
